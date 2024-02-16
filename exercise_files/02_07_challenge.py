@@ -90,4 +90,24 @@ scribe.up()
 scribe.up()
 scribe.up()
 
-
+def drawSquare(size,canvas)
+    # do we have to clear the canvas
+    
+    #instantiate a ne wTerminalScribe
+    myScribe = TerminalScribe(canvas)
+    
+    # draw top side
+    for unit in range(0,size):
+        myScribe.right()
+        
+    # draw right side
+    for unit in range(0,size):
+        myScribe.down()    
+        
+    # draw bottom side
+    for unit in range(0,x):
+        myScribe.left()
+        
+    # draw left side
+    for unit in range(0,x):
+        myScribe.up() 
